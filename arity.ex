@@ -12,3 +12,15 @@ defmodule Rectangulo do
     l1 * l2
   end
 end
+### OTRA FORMA DE REALIZARLO
+
+# • Haciendo que una función dependa de otra de diferente aridad, se podría realizar o siguiente:
+
+defmodule Calculadora do
+  def suma(n) do
+    suma(n, 0)
+  end
+  def suma(n1,n2) do
+    n1 + n2
+  end
+end
